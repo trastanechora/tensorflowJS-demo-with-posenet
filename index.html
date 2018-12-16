@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo PoseNet by Maestro Trastanechora</title>
+  </head>
+  <body>
+    
+    <h1>Pose Detection with PoseNet TensorflowJS</h1>
+    <div>
+    <p style="font-size: 12px"><i>Demo by Maestro Trastanechora</i></p>
+    <hr />
+    <p>Berikut adalah demo dari penggunaan framework Machine Learning Tensorflow yang diterapkan pada bahasa pemrograman JavaScript.</p>
+    <p>Untuk tujuan praktek penggunaan TensorflowJS saja maka tampilan dibikin sesimpel mungkin (hanya menggunakan html) untuk mempercepat proses loading.</p>
+    </div>
+    <div id="info" style='display:none'>
+      </div>
+      <div id="loading">
+          Loading the model...
+      </div>
+  
+      <div id='main' style='display:none'>
+          <video id="video" playsinline style=" -moz-transform: scaleX(-1);
+          -o-transform: scaleX(-1);
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+          display: none;
+          ">
+          </video>
+          <canvas id="output" />
+      </div>
+      <div class="footer">
+          <div class="footer-text">
+              <p>
+                  PoseNet ini bisa dijalankan dengan dua algoritma mode deteksi: <strong>single-pose</strong> atau <strong>multi-pose</strong>. Untuk mode single-pose detector memiliki tingkat akurasi yang lebih tinggi dan lebih cepat namun hanya bisa mendeteksi sebuah subjek saja dalam gambar.
+                  <br>
+                  <br> Terdapat panel opsi di samping kanan untuk mengendalikan script dari model PoseNet yang bisa kita gunakan sebagai percobaan/eksperimen kalkulasi Machine Learning tentang pengolahan citra > <strong>output stride</strong> dan <strong>image scale factor</strong> Memiiliki pengaruh yang paling besar terhadap akurasi/kecepatan kalkulasi. Semakin tinggi nilai image scale factor maka akan menghasilkan tingkat akurasi yang semakin tinggi juga namun akan memerlukan waktu proses yang lebih lama.
+                </p>
+          </div>
+      </div>
+      <script src="camera.js"></script>
+  </body>
+</html>
